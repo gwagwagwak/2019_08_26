@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.Employee.DAOVO.employees-mapper">
+  <cache-ref namespace="com.project.ings"/>
+   <select id="getMemberList" resultType="memberVO">
+        SELECT
+            m_email,
+            m_pw,
+            m_fname,
+            m_lname,
+            m_hp,
+            m_addr,
+            m_date,
+            m_nation,
+            m_secu,
+            m_asw,
+            m_type,
+            b_type,
+            b_number
+        FROM
+            member
+    </select>
+    
+  
+  
+</mapper>
